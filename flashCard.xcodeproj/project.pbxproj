@@ -11,8 +11,11 @@
 		3146C25C1D79B386006CB250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3146C25B1D79B386006CB250 /* ViewController.swift */; };
 		3146C25F1D79B386006CB250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3146C25D1D79B386006CB250 /* Main.storyboard */; };
 		3146C2611D79B386006CB250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3146C2601D79B386006CB250 /* Assets.xcassets */; };
-		3146C2641D79B386006CB250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3146C2621D79B386006CB250 /* LaunchScreen.storyboard */; };
 		3146C26F1D79B386006CB250 /* flashCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3146C26E1D79B386006CB250 /* flashCardTests.swift */; };
+		3146C2801D7A0094006CB250 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 3146C27F1D7A0094006CB250 /* correct.png */; };
+		3146C2821D7A0097006CB250 /* wrong.png in Resources */ = {isa = PBXBuildFile; fileRef = 3146C2811D7A0097006CB250 /* wrong.png */; };
+		3146C28A1D7A16DB006CB250 /* mathBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 3146C2891D7A16DB006CB250 /* mathBackground.png */; };
+		3146C2BD1D7F584D006CB250 /* MathPickController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3146C2BC1D7F584D006CB250 /* MathPickController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +34,14 @@
 		3146C25B1D79B386006CB250 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3146C25E1D79B386006CB250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3146C2601D79B386006CB250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3146C2631D79B386006CB250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3146C2651D79B386006CB250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3146C26A1D79B386006CB250 /* flashCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flashCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3146C26E1D79B386006CB250 /* flashCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flashCardTests.swift; sourceTree = "<group>"; };
 		3146C2701D79B386006CB250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3146C27F1D7A0094006CB250 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = correct.png; path = ../../../Desktop/correct.png; sourceTree = "<group>"; };
+		3146C2811D7A0097006CB250 /* wrong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wrong.png; path = ../../../Desktop/wrong.png; sourceTree = "<group>"; };
+		3146C2891D7A16DB006CB250 /* mathBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mathBackground.png; path = ../../../Desktop/mathBackground.png; sourceTree = "<group>"; };
+		3146C2BC1D7F584D006CB250 /* MathPickController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathPickController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +85,10 @@
 			children = (
 				3146C2591D79B386006CB250 /* AppDelegate.swift */,
 				3146C25B1D79B386006CB250 /* ViewController.swift */,
+				3146C2BC1D7F584D006CB250 /* MathPickController.swift */,
 				3146C25D1D79B386006CB250 /* Main.storyboard */,
 				3146C2601D79B386006CB250 /* Assets.xcassets */,
-				3146C2621D79B386006CB250 /* LaunchScreen.storyboard */,
+				3146C2BB1D7EF31D006CB250 /* Resources */,
 				3146C2651D79B386006CB250 /* Info.plist */,
 			);
 			path = flashCard;
@@ -94,6 +101,16 @@
 				3146C2701D79B386006CB250 /* Info.plist */,
 			);
 			path = flashCardTests;
+			sourceTree = "<group>";
+		};
+		3146C2BB1D7EF31D006CB250 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3146C27F1D7A0094006CB250 /* correct.png */,
+				3146C2811D7A0097006CB250 /* wrong.png */,
+				3146C2891D7A16DB006CB250 /* mathBackground.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +163,7 @@
 				TargetAttributes = {
 					3146C2551D79B385006CB250 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4S3VC3K23S;
 					};
 					3146C2691D79B386006CB250 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -177,8 +195,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3146C2641D79B386006CB250 /* LaunchScreen.storyboard in Resources */,
+				3146C2821D7A0097006CB250 /* wrong.png in Resources */,
+				3146C2801D7A0094006CB250 /* correct.png in Resources */,
 				3146C2611D79B386006CB250 /* Assets.xcassets in Resources */,
+				3146C28A1D7A16DB006CB250 /* mathBackground.png in Resources */,
 				3146C25F1D79B386006CB250 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3146C2BD1D7F584D006CB250 /* MathPickController.swift in Sources */,
 				3146C25C1D79B386006CB250 /* ViewController.swift in Sources */,
 				3146C25A1D79B386006CB250 /* AppDelegate.swift in Sources */,
 			);
@@ -227,14 +248,6 @@
 				3146C25E1D79B386006CB250 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3146C2621D79B386006CB250 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3146C2631D79B386006CB250 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -327,10 +340,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = flashCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Scott-Courtney.flashCard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -338,10 +355,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = flashCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Scott-Courtney.flashCard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
